@@ -38,7 +38,7 @@ A chat bot app developed in Next.js and Node.js that gives financial information
 
 # Instructions
 
-To initiate the conversation just enter a phrase that contains the words: hello, good or i want.
+To initiate the conversation just enter a phrase that contains the words 'hello', 'good' or 'i want'.
 
 After login enter a phrase that contains the word 'loan'.
 
