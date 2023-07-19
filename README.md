@@ -71,7 +71,13 @@ $ npm install
 ## Creates env file
 
 - DATABASE_URL=postgresql://USER:PASSWORD@HOST:PORT/DATABASE
-	
+
+# Create the tables
+$ npx prisma migrate dev
+
+# Seed the tables 
+$ npm run db:reset
+
 # Run the application
 $ npm run start
 
@@ -84,6 +90,9 @@ $ npm run start
 
 # Install dependencies
 $ npm install
+
+# On file api.ts set the property
+baseUrl: http://localhost:3333
 	
 # Run the application
 $ npm run start
