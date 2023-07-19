@@ -131,8 +131,8 @@ export default function Home() {
     <div className="flex min-h-screen bg-slate-50 items-center justify-center">
       <Card className="w-[440px] h-[700px] grid grid-rows-[min-content_1fr_min-content] gap-5">
         <CardHeader>
-          <CardTitle>ChatFin </CardTitle>
-          <CardDescription>Financial information chat bot.</CardDescription>
+          <CardTitle>FinChat</CardTitle>
+          <CardDescription>A financial information chat bot.</CardDescription>
         </CardHeader>
         <CardContent ref={container} className="space-y-4 overflow-auto scroll-smooth">
           {messages.map(({role, message, options, info, references }, index) => {
