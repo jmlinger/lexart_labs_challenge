@@ -1,25 +1,16 @@
 import { FastifyInstance } from 'fastify'
 import { prisma } from '../lib/prisma'
 import { z } from 'zod'
-import exportFiles from '../utils/exportFiles'
 
 export async function conversationRoutes(app: FastifyInstance) {
-  app.get('/conversation', async (request) => {
+  app.get('/conversation', async (request, reply) => {
     const response = await prisma.conversation.findMany({
       orderBy: {
         createdAt: 'desc',
       },
     })
-    const fileName = exportFiles.tocsv(response)
 
-    const fullUrl = request.protocol.concat('://').concat(request.hostname)
-
-    const fileUrl = new URL(`/exports/${fileName}`, fullUrl).toString()
-
-    return {
-      name: fileName,
-      url: fileUrl,
-    }
+    return response
   })
 
   app.post('/conversation', async (request) => {
