@@ -4,6 +4,7 @@
 # Description
 A chat bot app developed in Next.js and Node.js that gives financial information.
 <br>
+<br>
 
 # Development Stacks
 
