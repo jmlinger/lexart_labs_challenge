@@ -56,7 +56,7 @@ This could happen because the server that the api is hosted disables it when its
 
 # Deployed application
 
-Access the app on Vercel clicking <a target="_blanck" href="https://deliciousfood.vercel.app/">here<a/>.
+Access the app on Vercel clicking <a href="https://lexart-labs-challenge-zeta.vercel.app/" target="_blanck">here<a/>.
 
 <br>
 
