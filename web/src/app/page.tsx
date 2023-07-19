@@ -14,7 +14,6 @@ import { useRouter } from "next/navigation";
 interface Imessage {
   role: string
   message: string
-  group?: string
   options?: string[]
   info?: string[]
   references?: string[]
@@ -26,7 +25,7 @@ interface Ilogin {
 }
 
 export default function Home() {
-  const [messages, setMessages] = useState<Array<Imessage>>([])
+  const [messages, setMessages] = useState<Imessage[]>([])
   const [input, setInput] = useState<string>('')
   const [login, setLogin] = useState<Ilogin>()
   const container = useRef<HTMLDivElement>(null)
@@ -84,7 +83,7 @@ export default function Home() {
   }
 
   useEffect(() => {
-    if (login?.name) {
+    if (login?.name && !login?.password) {
       sendMessage()   
     }
     
