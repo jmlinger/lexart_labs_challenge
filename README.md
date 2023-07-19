@@ -36,6 +36,24 @@ A chat bot app developed in Next.js and Node.js that gives financial information
 </div>
 <br>
 
+# Instructions
+
+To initiate the conversation just enter a phrase that contains the words: hello, good or i want.
+
+After login enter a phrase that contains the word 'loan'.
+
+To close the conversation just say 'goodbye' or 'bye'.
+
+A few seconds after the chat's farewell message, you will be redirect to a page that you can generate and download the conversations of all users.
+
+<br>
+
+*IMPORTANT: The bot could take long to answer when you start the conversation. Just wait a litte!
+
+This could happen because the server that the api is hosted disables it when its inactive for a few time.
+
+<br>
+
 # Deployed application
 
 Access the app on Vercel clicking <a target="_blanck" href="https://deliciousfood.vercel.app/">here<a/>.
