@@ -44,7 +44,7 @@ After login enter a phrase that contains the word 'loan'.
 
 To close the conversation just say 'goodbye' or 'bye'.
 
-A few seconds after the chat's farewell message, you will be redirect to a page that you can generate and download the conversations of all users.
+A few seconds after the bot's farewell message, you will be redirect to a page that you can generate and download the conversations of all users.
 
 <br>
 
